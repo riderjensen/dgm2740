@@ -1,0 +1,99 @@
+
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+/*  header  */
+header{
+	max-width: 75rem;
+	margin: 0 auto;
+	height: 200px;
+	background-color: lightblue;
+	background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 150px;
+	h1{
+		padding-top: 100px;
+		margin-left: 160px;
+		font-size: 40px;
+	}
+	h2{
+		font-size: 30px;
+		display: none;
+	}
+}
+/*  nav  */
+nav {
+	background-color: #333;
+	ul{
+		max-width: 75rem;
+		margin: 0 auto;
+		list-style-type: none;
+	    padding: 0;
+	    overflow: hidden;
+	    
+		li{
+			float:left;
+			border-right: 1px solid #bbb;
+			margin: 0 auto;
+			a{
+			display: block;
+			width: 259px;
+		    color: white;
+		    text-align: center;
+		    padding: 14px 16px;
+		    text-decoration: none;
+			font-size: 25px;
+
+			}
+		
+		}
+	}
+
+
+}
+/*  main  */
+main{
+	max-width: 75rem;
+		margin: 0 auto;
+	img{
+		margin-top: 10px;
+		width:100%;
+	}
+	h2{
+		padding:20px;
+		font-size: 30px;
+	}
+	p{
+
+		padding: 10px;
+		font-size: 25px;
+	}
+	.secondImage{
+
+	}
+
+
+}
+
+/*  footer  */
+footer{
+	background-color: lightgray;
+	p{
+	max-width: 75rem;
+	margin: 0 auto;
+	text-align: center;
+	
+	font-size: 20px;
+	}	
+}
+
+
+/* various extras */
+.active{
+	background-color: gray;
+}
