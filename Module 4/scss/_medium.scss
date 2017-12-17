@@ -1,0 +1,23 @@
+
+/*Tablet */
+header {
+    height:130px;
+    background-image: url(../img/header1024.jpg);
+}
+
+/*  main  */
+main{
+	h2{
+		clear: left;
+	}
+	.blog{
+		article{
+			float: left;
+			width: 50% - $gutterDouble;
+		}
+		article:nth-child(2n+1) { clear: left;}
+	}
+
+
+}
+

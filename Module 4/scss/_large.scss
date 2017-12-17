@@ -1,0 +1,45 @@
+
+header{
+	background-image: url(../img/header1600.jpg), url(../img/headerRepeat.jpg);
+    background-repeat: no-repeat, repeat-x;
+}
+
+nav {
+	ul{
+	    max-width: 60rem;
+		margin: 0 auto;
+	    border-left: 1px solid rgba(0,0,0,0.3);
+		li{
+			width: auto;
+			a{
+			    padding: .5rem 1rem;
+			}
+
+		
+		}
+		li:last-child{
+			border-left: 1px solid rgba(0,0,0,0.3);
+		}
+	}
+
+
+
+}
+
+main{
+	.blog{
+		article{
+			float: left;
+			width: 33.33% - $gutterDouble;
+		}
+		article:nth-child(2n+1) { clear: none;}
+		article:nth-child(3n+1) { clear: left;}
+	}
+
+}
+footer{
+	p{
+		max-width: 60rem;
+		margin: 0 auto;
+	}
+}
