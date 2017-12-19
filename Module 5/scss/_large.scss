@@ -1,0 +1,47 @@
+
+
+nav {
+	ul{
+	    border-left: 1px solid rgba(0,0,0,0.3);
+		li{
+			width: auto;
+			a{
+			    padding: .5rem 1rem;
+			}
+
+		
+		}
+		li:last-child{
+			border-left: 1px solid rgba(0,0,0,0.3);
+		}
+	}
+
+
+
+}
+
+main{
+
+	article{
+		column-count:4;
+		-webkit-column-count:4;
+		-moz-column-count:4;
+
+	}
+	.founderImg{
+		width: 41.6vw;
+		float: right;
+		img{
+			max-width: 41.6vw;
+		}
+
+	}
+
+}
+
+footer{
+	p{
+		max-width: 60rem;
+		margin: 0 auto;
+	}
+}

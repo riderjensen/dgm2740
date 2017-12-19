@@ -1,0 +1,30 @@
+
+/*Tablet */
+
+/*  main  */
+main{
+
+	article{
+		column-count:2;
+		-webkit-column-count:2;
+		-moz-column-count:2;
+
+		column-rule: 1px solid $secondary-color;
+		-webkit-column-rule: 1px solid $secondary-color;
+		-moz-column-rule: 1px solid $secondary-color;
+
+		column-gap: 10px;
+		-webkit-column-gap: 10px;
+		-moz-column-gap: 10px;
+	}
+	.founderImg{
+		width: 58vw;
+		float: right;
+		img{
+		max-width: 58vw;
+		}
+
+	}
+
+}
+

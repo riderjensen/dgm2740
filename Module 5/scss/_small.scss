@@ -1,0 +1,165 @@
+
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+body{
+	font-size: 1rem;
+	font-family: $font-stack;
+	box-shadow: 0 0 10px #000;
+
+}
+/*  header  */
+header{
+	font-weight: $boldWeight;
+	max-width: 75rem;
+	margin: 0 auto;
+	height:150px;
+    background-color: lightblue;
+    position: relative;
+
+	h1{
+		margin-left: 7rem;
+		padding: $gutter;
+		font-weight: $boldWeight;
+		font-size: 3rem;
+		color: #FFF;
+	}
+	h2{
+		margin-left: 7rem;
+		padding: $gutter;
+		font-weight: $normalWeight;
+		font-size: 1.4rem;
+		color: #FFF;
+	}
+	figure{
+		position:absolute;
+		bottom: 0;
+		left: 2%;
+	}
+}
+
+/*  nav  */
+nav {
+	max-width: 75rem;
+		margin: 0 auto;
+	
+	ul{
+		
+		border-bottom: 1px solid rgba(0,0,0,0.3);
+	    overflow: hidden;
+	    background-color: $primary-color;
+		li{
+			float:left;
+			border-right: 1px solid rgba(0,0,0,0.3);
+			width: 25%;
+			a{
+				display: block;
+			    color: black;
+			    text-align: center;
+			    padding: 14px 16px;
+			    text-decoration: none;
+				font-size: 15px;
+				font-weight: $boldWeight;
+				transition: background 0.75s ease, color 0.75s ease;
+
+			}
+			a:hover{
+				background-color:$secondary-color;
+				color: $primary-color;
+			}
+		
+		}
+		li:last-child{
+			border-right:none;
+		}
+	}
+
+
+
+}
+/*  main  */
+main{
+	max-width: 75rem;
+	margin: 0 auto;
+	background-color: #fff;
+	.banner{
+		width: 100% - $gutterDouble;
+		margin: .5rem $gutter;
+		img{
+			width: 100%;
+		}
+	}
+	h1{
+		padding: $gutter;
+		font-size:2rem ;
+	}
+	hr{
+		background: linear-gradient(to right, #ff5c5c 0%, #ff99cc 100%);
+		height: 2px;
+		border: none;
+		margin: 0 $gutter;
+	}
+	
+	h2{
+		font-size: 1.5rem;
+		margin: .75rem 0 0 $gutter;
+		color: lighten( $primary-color, 10%);
+	}
+	h3{
+		font-size: 1.2rem;
+		color: lighten( $primary-color, 20%);
+	}
+	article{
+		margin: .5rem $gutter;
+		width: 100% - $gutterDouble;
+		
+	}
+	.founder{
+		p{
+			margin: .5rem $gutter;
+			width: 100% - $gutterDouble;
+		}
+	}
+	.founderImg{
+		width: 100vw;
+		float: right;
+		img{
+			max-width: 100vw;
+		}
+
+	}
+
+
+}
+
+/*  footer  */
+footer{
+	background-color: #fff;
+	max-width: 75rem;
+	margin: 0 auto;
+	background-color: $primary-color;
+	p{
+		font-size: 1rem;
+		padding:0.75rem;
+		text-align: center;
+		a{
+			color: $secondary-color;
+		}
+	}
+}
+
+
+/* various extras */
+.active{
+	background-color: darken($secondary-color, 10%);
+}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
