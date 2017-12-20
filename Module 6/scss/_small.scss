@@ -17,41 +17,68 @@ header{
 	font-weight: $boldWeight;
 	max-width: 75rem;
 	margin: 0 auto;
-	height:150px;
+	height:100px;
     background-color: lightblue;
     position: relative;
 
 	h1{
 		margin-left: 7rem;
-		padding: $gutter;
-		font-weight: $boldWeight;
-		font-size: 3rem;
+		font-size: 2rem;
 		color: #FFF;
+		position:absolute;
+		bottom: 40px;
+		left: 20px;
 	}
 	h2{
 		margin-left: 7rem;
-		padding: $gutter;
-		font-weight: $normalWeight;
 		font-size: 1.4rem;
 		color: #FFF;
+		position:absolute;
+		bottom: 0;
+		left: 20px;
 	}
-	figure{
+	.logo{
 		position:absolute;
 		bottom: 0;
 		left: 2%;
+		img{
+			width: 100px;
+		height: 80px;
+		}
+		
 	}
+	ul.social{
+		float: right;
+
+		li{
+			float: left;
+			a{
+				font-size: 1.8rem;
+				padding-left: .5rem;
+				color: white;
+			}
+			a:hover{
+				color: $primary-color;
+			}
+		}
+	}
+}
+div#headerWrapper{
+	background-color:lightblue;
 }
 
 /*  nav  */
 nav {
-	max-width: 75rem;
-		margin: 0 auto;
+	background-color: $primary-color;
+	
 	
 	ul{
 		
 		border-bottom: 1px solid rgba(0,0,0,0.3);
 	    overflow: hidden;
 	    background-color: $primary-color;
+	    max-width: 75rem;
+		margin: 0 auto;
 		li{
 			float:left;
 			border-right: 1px solid rgba(0,0,0,0.3);
@@ -86,23 +113,9 @@ main{
 	max-width: 75rem;
 	margin: 0 auto;
 	background-color: #fff;
-	.banner{
-		width: 100%;
-		margin: .5rem $gutter;
-		img{
-			width: 100%;
-			display: block;
-		}
-	}
 	h1{
 		padding: $gutter;
 		font-size:2rem ;
-	}
-	hr{
-		background: linear-gradient(to right, #ff5c5c 0%, #ff99cc 100%);
-		height: 2px;
-		border: none;
-		margin: 0 $gutter;
 	}
 	
 	h2{
@@ -117,17 +130,34 @@ main{
 	article{
 		margin: .5rem $gutter;
 		width: 100% - $gutterDouble;
+		img{
+			float: right;
+		}
 		
 	}
-	.founder{
-		p{
-			margin: .5rem $gutter;
-			width: 100% - $gutterDouble;
+	figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 80.5%; /* You define this doing height / width * 100% */
+    position: relative;
+	    img{
+		    width: 100%;
+		    /*height: auto;*/
+		    position: absolute;
 		}
 	}
-	.founderImg{
+	figure.bandMember{
+		width: 75%;
 		float: right;
+		-webkit-clip-path: circle(40% at 50% 50%);
+		clip-path: circle(40% at 50% 50%);
+		shape-outside: circle(40% at 50% 50%);
+		img{
+			width: 100%;
+			
+		}
 	}
+	
 
 
 }

@@ -28,12 +28,19 @@ main{
 		-moz-column-count:4;
 
 	}
-
-}
-
-footer{
 	p{
-		max-width: 60rem;
-		margin: 0 auto;
+		padding: 0px;
 	}
+	figure.bandMember{
+		width: 75%;
+		float: right;
+		-webkit-clip-path: circle(40% at 50% 50%);
+		clip-path: circle(40% at 50% 50%);
+		shape-outside: circle(40% at 50% 50%);
+		img{
+			width: 100%;
+			
+		}
+	}
+
 }

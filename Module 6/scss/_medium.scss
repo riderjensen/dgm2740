@@ -1,0 +1,44 @@
+
+/*Tablet */
+header{
+	ul.social{
+		li{
+			a{
+				font-size: 2.5rem;
+			}
+		}
+	}
+}
+/*  main  */
+main{
+	
+	article{
+		column-count:2;
+		-webkit-column-count:2;
+		-moz-column-count:2;
+
+		column-rule: 1px solid $secondary-color;
+		-webkit-column-rule: 1px solid $secondary-color;
+		-moz-column-rule: 1px solid $secondary-color;
+
+		column-gap: 50px;
+		-webkit-column-gap: 50px;
+		-moz-column-gap: 50px;
+	}
+	p{
+		padding: 20px;
+	}
+	figure.bandMember{
+		width: 35%;
+		float: right;
+		-webkit-clip-path: circle(40% at 50% 50%);
+		clip-path: circle(30% at 50% 25%);
+		shape-outside: circle(30% at 50% 25%);
+		img{
+			width: 100%;
+			
+		}
+	}
+
+}
+
