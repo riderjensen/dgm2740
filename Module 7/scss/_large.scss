@@ -1,0 +1,42 @@
+
+
+nav {
+	div{
+		
+
+			a{
+			    padding: .5rem 1rem;
+			}
+
+		
+		a:last-child{
+			border-left: 1px solid rgba(0,0,0,0.3);
+		}
+	}
+
+
+
+}
+
+main{
+
+	@for $i from 1 through 12{
+		$w: ($i / 12) * 100%;
+		.large-#{$i} {
+			width: $w;
+			float: left;
+		}
+	}
+	div.cta{
+
+		div{
+			button{
+				
+			    margin-left: 6rem;
+
+			}
+			
+		}
+	}
+
+}

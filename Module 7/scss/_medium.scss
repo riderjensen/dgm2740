@@ -1,0 +1,46 @@
+
+/*Tablet */
+
+
+nav {
+	
+	div{
+	
+		a{
+			float:left;
+		}
+	}
+	
+  .topnav a:not(:first-child) {
+  	display: block;
+  }
+  .topnav a.icon {
+    display: none;
+  	}
+
+}
+/*  main  */
+main{
+
+	@for $i from 1 through 12{
+		$w: ($i / 12) * 100%;
+		.medium-#{$i} {
+			width: $w;
+			float: left;
+		}
+	}
+	div.cta{
+
+		div{
+			button{
+				
+
+			    margin-left: 0rem;
+
+			}
+			
+		}
+	}
+
+}
+
