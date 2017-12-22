@@ -1,0 +1,90 @@
+
+/*Tablet */
+header{
+	position: relative;
+	height:150px;
+	figure.logo{
+
+		bottom: 45px;
+
+	}
+	ul.social{
+		position: absolute;
+		bottom: .5rem;
+		right: $gutter;
+	}
+	ul.social li{
+		width: auto;
+	}
+	input[type=text] {
+	    width: 130px;
+	    right: 10px;
+	    float: right;
+		height: 30px;
+		bottom: 70px;
+	}
+
+	/* When the input field gets focus, change its width to 100% */
+	input[type=text]:focus {
+	    width: 20%;
+	}
+}
+
+nav {
+	
+	div{
+	
+		a{
+			float:left;
+		}
+	}
+	
+  .topnav a:not(:first-child) {
+  	display: block;
+  }
+  .topnav a.icon {
+    display: none;
+  	}
+
+}
+/*  main  */
+main{
+
+	div.lead{
+		grid-row: 1 / span 2;
+		grid-column: 1;
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		-ms-grid-row-span: 2;
+	}
+	div.secondTop{
+		grid-row: 1;
+		grid-column: 2;
+		align-self: start;
+		-ms-grid-row: 1;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		-ms-grid-row-span: 1;
+	}
+	div.secondBottom{
+		grid-row: 2;
+		grid-column: 2;
+		align-self: end;
+		-ms-grid-row: 2;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		-ms-grid-row-span: 1;
+	}
+
+
+}
+footer{
+	div.container1{
+		div{
+			-ms-flexbasis: 46%;
+			flex-basis: 50%;
+			
+		}
+	}
+}
