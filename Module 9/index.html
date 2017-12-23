@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Portland City: Plan Your Visit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="slick/slick.css">
+        <link rel="stylesheet" href="slick/slick-theme.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya:400,800" rel="stylesheet">
+    </head>
+    <body>
+      <header> 
+        <div class="headerPicture">
+          <h1>Portland City</h1>
+          <h2>Where Things Get Weird</h2>
+        </div>
+      </header>
+      <nav class="clearfix">
+        <div class="clearfix topnav" id="myTopnav">
+          <a class="active" href="">Visit</a>
+          <a href="">Departments</a>
+          <a href="">Services</a>
+          <a href="">Pay Bills</a>
+          <a href="">Meetings</a>
+          <a href="">Help</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+      </nav>
+      <main class="clearfix">
+        <div class="mySlider lead">
+          <picture>
+            <source srcset="img/portland1-944.jpg" media="(min-width: 29.25rem)">
+            <img src="img/portland1-468.jpg" alt="portland">
+          </picture>
+
+          <picture>
+            <source srcset="img/portland2-944.jpg" media="(min-width: 29.25rem)">
+            <img src="img/portland2-468.jpg" alt="portland">
+          </picture>
+          <picture>
+            <source srcset="img/portland3-944.jpg" media="(min-width: 29.25rem)">
+            <img src="img/portland3-468.jpg" alt="portland">
+          </picture>
+          <picture>
+            <source srcset="img/portland4-944.jpg" media="(min-width: 29.25rem)">
+            <img src="img/portland4-468.jpg" alt="portland">
+          </picture>
+          <picture>
+            <source srcset="img/portland5-944.jpg" media="(min-width: 29.25rem)">
+            <img src="img/portland5-468.jpg" alt="portland">
+          </picture>
+        </div> <!-- End Slide -->
+
+        <h2>Plan Your Visit</h2>
+        <div class="teaser ie1 opacity">
+          <img src="img/hotel.jpg" alt="hotel">
+          <i class="fa fa-bed" aria-hidden="true"></i>
+          <span>Places To Stay</span> 
+        </div>
+           
+        <div class="teaser ie2 opacity">
+          <img src="img/rest.jpg" alt="restaurant">
+          <i class="fa fa-cutlery" aria-hidden="true"></i>
+          <span>Places To Eat</span> 
+        </div>
+            
+        <div class="teaser ie3 opacity">
+          <img src="img/see.jpg" alt="city center">
+          <i class="fa fa-binoculars" aria-hidden="true"></i>
+          <span>Places To See</span> 
+        </div>
+            
+        <div class="teaser ie4 opacity">
+          <img src="img/do.jpg" alt="festival">
+          <i class="fa fa-users" aria-hidden="true"></i>
+          <span>Places To Be At</span> 
+        </div>
+
+      </main>
+      <footer>
+        <p>&copy; Rider Jensen Creations 2018 | <a href="http://www.riderjensen.com" target="_blank">riderejensen.com</a> | Login </p>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="slick/slick.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('.mySlider').slick(
+          {
+            autoplay:true,
+            dots: true,
+            arrows: false,
+            cssEase: 'ease-out',
+            speed: 2000,
+            autoplaySpeed: 10000
+          });
+        });
+      </script>
+      <script src="js/main.js"></script>
+  </body>
+  
+</html>
+
+
+
+

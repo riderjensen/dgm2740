@@ -1,0 +1,18 @@
+$font-stack: 'Alegreya', serif;
+$normalWeight: 400;
+$boldWeight: 800;
+
+$primary-color: #77625C;
+$secondary-color: #49392C;
+$accent-color: #E6EBE0;
+
+$gutter: 2%;
+$gutterDouble: (2 * $gutter);
+
+@mixin gradient($variable1, $variable2){
+background: $variable1; /* Old browsers */
+background: -moz-linear-gradient(top, $variable1 0%, $variable2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, $variable1 0%, $variable2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, $variable1 0%, $variable2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$variable1', endColorstr='$variable2',GradientType=0 ); /* IE6-9 */
+}
