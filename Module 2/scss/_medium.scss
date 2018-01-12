@@ -16,13 +16,16 @@ header{
 		display: inline;
 	}
 }
-/*  nav  */
 nav {
 	ul{
+	    
 		li{
 
+			width: 25%;
 			a{
-			width: 180px;
+
+				font-size: 15px;
+
 			}
 		
 		}

@@ -10,7 +10,6 @@ body{
 	font-size: 1rem;
 	font-family: $font-stack;
 	box-shadow: 0 0 10px #000;
-	background-image:url(../img/background3.jpg);
 
 }
 /*  header  */
@@ -22,13 +21,13 @@ header{
     background-image: url(../img/header0560.jpg);
 
 	h1{
-		padding: $gutter;
+		padding: 1rem;
 		font-weight: $boldWeight;
 		font-size: 3rem;
 		color: #FFF;
 	}
 	h2{
-		padding: $gutter;
+		margin-left: 1rem;
 		font-weight: $normalWeight;
 		font-size: 1.4rem;
 		color: #FFF;

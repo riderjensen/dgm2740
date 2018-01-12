@@ -55,8 +55,7 @@ html {
 body {
   font-size: 1rem;
   font-family: "Alegreya", serif;
-  box-shadow: 0 0 10px #000;
-  background-image: url(../img/background3.jpg); }
+  box-shadow: 0 0 10px #000; }
 
 /*  header  */
 header {
@@ -66,12 +65,12 @@ header {
   height: 110px;
   background-image: url(../img/header0560.jpg); }
   header h1 {
-    padding: 2%;
+    padding: 1rem;
     font-weight: 800;
     font-size: 3rem;
     color: #FFF; }
   header h2 {
-    padding: 2%;
+    margin-left: 1rem;
     font-weight: 400;
     font-size: 1.4rem;
     color: #FFF; }
@@ -186,7 +185,7 @@ footer {
     clear: left; } }
 @media only screen and (min-width: 60rem) {
   header {
-    background-image: url(../img/header1600.jpg), url(../img/headerRepeat.jpg);
+    background-image: url(../img/header1600.jpg);
     background-repeat: no-repeat, repeat-x; }
 
   nav ul {
@@ -211,3 +210,5 @@ footer {
   footer p {
     max-width: 60rem;
     margin: 0 auto; } }
+
+/*# sourceMappingURL=styles.css.map */

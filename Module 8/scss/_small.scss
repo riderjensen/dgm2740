@@ -12,24 +12,23 @@ body{
 }
 /*  header  */
 header{
-	height:190px;
+	height:150px;
     position: relative;
 
 	figure.logo{
 		position:absolute;
-		bottom: 95px;
-		left: 20px;
+		bottom: 50%;
 		img{
-			width: 200px;
+			width: 50%;
 		}
 	}
 	ul.social{
 	position: absolute;
-	bottom: 45px;
-	width: 100%;
+	bottom: 50%;
+	right: 0px;
 	li{
 		float: right;
-		width: 25%;
+		width: 33.3%;
 		a{
 			display: block;
 			margin: 0 auto;
@@ -48,9 +47,7 @@ header{
 	ul.social .facebook a{
 		background-position: -45px 0px;
 	}
-	ul.social .googleplus a{
-		background-position: -180px 0px;
-	}
+
 	ul.social .twitter a:hover{
 		background-position: -90px -45px;
 	}
@@ -59,9 +56,6 @@ header{
 	}
 	ul.social .facebook a:hover{
 		background-position: -45px -45px;
-	}
-	ul.social .googleplus a:hover{
-		background-position: -180px -45px;
 	}
 
 

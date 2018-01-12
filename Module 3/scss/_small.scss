@@ -21,12 +21,12 @@ header{
 	font-weight: $boldWeight;
 	
 	h1{
-		padding: $gutter;
+		padding: 1rem;
 		font-weight: $boldWeight;
 		font-size: 3rem;
 	}
 	h2{
-		padding: $gutter;
+		padding: 1rem;
 		font-weight: $normalWeight;
 		font-size: 1.4rem;
 	}
@@ -91,7 +91,6 @@ main{
 		margin: .5rem $gutter;
 		float: left;
 		img{
-			height: 200px;
 			width: 100%;
 		}
 		figcaption{

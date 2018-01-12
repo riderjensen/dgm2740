@@ -27,20 +27,21 @@ main{
 		-webkit-column-count:4;
 		-moz-column-count:4;
 
+		column-rule: 1px solid $secondary-color;
+		-webkit-column-rule: 1px solid $secondary-color;
+		-moz-column-rule: 1px solid $secondary-color;
+
+		column-gap: 50px;
+		-webkit-column-gap: 50px;
+		-moz-column-gap: 50px;
+
 	}
-	p{
-		padding: 0px;
-	}
+
 	figure.bandMember{
-		width: 75%;
-		float: right;
-		-webkit-clip-path: circle(40% at 50% 50%);
-		clip-path: circle(40% at 50% 50%);
-		shape-outside: circle(40% at 50% 50%);
-		img{
-			width: 100%;
-			
-		}
+		width: 80%;
+		-webkit-clip-path: circle(50% at 50% 50%);
+		clip-path: circle(35% at 50% 50%);
+		shape-outside: circle(35% at 50% 50%);
 	}
 
 }

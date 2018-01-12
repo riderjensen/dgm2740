@@ -25,19 +25,11 @@ main{
 		-webkit-column-gap: 50px;
 		-moz-column-gap: 50px;
 	}
-	p{
-		padding: 20px;
-	}
 	figure.bandMember{
-		width: 35%;
-		float: right;
-		-webkit-clip-path: circle(40% at 50% 50%);
-		clip-path: circle(30% at 50% 25%);
-		shape-outside: circle(30% at 50% 25%);
-		img{
-			width: 100%;
-			
-		}
+		width: 50%;
+		-webkit-clip-path: circle(50% at 50% 50%);
+		clip-path: circle(35% at 50% 50%);
+		shape-outside: circle(40% at 50% 50%);
 	}
 
 }

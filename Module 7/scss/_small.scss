@@ -10,6 +10,10 @@ body{
 	font-size: 1rem;
 	font-family: $font-stack;
 	box-shadow: 0 0 10px #000;
+	.colorHR{
+		background-color: $secondary-color;
+		height:10px;
+	}
 
 }
 /*  header  */
@@ -215,9 +219,11 @@ main{
 				}
 			}
 			h2{
+				padding: 1rem;
 				background-color:$primary-color;
 			}
 			p{
+				padding: 1rem;
 				background-color:$primary-color;
 			}
 			button{
@@ -233,9 +239,11 @@ main{
 			margin-bottom: 3rem;
 			margin-top: 3rem;
 			h2{
+				padding: .5rem;
 				background-color:$primary-color;
 			}
 			p{
+				padding: .5rem;
 				background-color:$primary-color;
 			}
 			button{
