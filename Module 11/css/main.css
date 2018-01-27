@@ -113,9 +113,13 @@ header {
   color: #277464;
   padding: 0.5rem 2%;
   font-size: 1.5rem; }
+  header h1.top {
+    border-bottom: 3px solid #fff; }
+  header h1 {
+    margin-top: 10px; }
 
 nav {
-  background-color: #4D4D4D;
+  background-color: #CCCCCC;
   position: fixed;
   bottom: 0;
   width: 100vw;
@@ -130,7 +134,7 @@ nav {
     padding: .5rem 0;
     color: #008E72; }
   nav div.active a {
-    background-color: #CCCCCC; }
+    background-color: #4D4D4D; }
 
 main.hotels {
   display: grid;
