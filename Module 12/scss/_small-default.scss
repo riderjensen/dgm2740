@@ -1,0 +1,378 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+body{
+	font-size: 16px;
+	font-family: $defaultFont;
+	font-weight: $normal;
+}
+header{
+	max-width: 65rem;
+	margin: 0 auto;
+	figure{
+		margin-left: 12px;
+		width: 100%;
+		img{
+		
+		max-wdith: 30px;
+		}
+	}
+	h1{
+		position: absolute;
+		top: 30px;
+		margin-left: 80px;
+		color: $primaryColor;
+		font-size: 20px;
+	}
+
+	h2{
+		position: absolute;
+		top: 50px;
+		margin-left: 80px;
+		color: silver;
+	}
+}
+
+nav {
+	max-width: 65rem;
+	margin: 0 auto;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	
+	div{
+		max-width: 65rem;
+	    overflow: hidden;
+		a{
+			float:left;
+			display: block;
+		    color: lighten(black, 30%);
+		    text-align: center;
+		    padding: 14px 16px;
+		    text-decoration: none;
+			font-size: 16px;
+		}
+		a:hover{
+			
+		}
+	}
+	.topnav a:not(.active) {
+		display: none;
+	}
+	.topnav a.icon {
+	    float: left;
+	    display: block;
+	}
+  	.topnav.responsive {position: relative;}
+  	.topnav.responsive .icon {
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+ 	}
+    .topnav.responsive a {
+	    float: none;
+	    display: block;
+	    text-align: right;
+  }
+
+}
+
+main{
+	max-width: 100%;
+	div.banner{
+		max-width: 65rem;
+		margin: 0 auto;
+		figure{
+			width: 100%;
+			img{
+				width: 100%;
+			}
+		}
+	}
+
+	div.longColor{
+		max-width: 100%;
+		margin: 0 auto;
+		background-color: #111119;
+
+		div.columns{
+
+			max-width: 65rem;
+			margin: 0 auto;
+
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			-ms-grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-column-gap: 10px;
+			grid-row-gap: 10px;
+			
+			div.informationLeft{
+				margin-top: 30px;
+				margin-bottom: 30px;margin-bottom: 30px;
+				grid-row: 1;
+				grid-column: 1/span 4;
+				-ms-grid-row: 1;
+				-ms-grid-column: 1;
+				-ms-grid-column-span: 4;
+				-ms-grid-row-span: 1;
+				
+				color: white;
+				h1,h2{
+					padding: 0.5rem;
+					color: $accentColor;
+					font-size:1.7rem;
+				}
+				P{
+					padding: 0.5rem;
+				}
+				ul{
+					margin-left: 60px;
+					padding: .5rem;
+				}
+				
+			}//end info left
+			div.informationRight{
+				margin-bottom: 30px;
+				grid-row: 3;
+				grid-column: 1/span 4;
+				-ms-grid-row: 3;
+				-ms-grid-column: 1;
+				-ms-grid-column-span: 4;
+				-ms-grid-row-span:1;
+				
+				text-align:left;
+				display: inline;
+				float: right;
+				h1,h2{
+					font-size:1.7rem;
+					padding: 0.5rem;
+					color: $accentColor;
+				}
+				p{
+					font-size: 20px;
+					color:white;
+					margin-left: 20px;
+				}
+
+
+			}//end info right
+		}//end columns
+
+	}//end longColor
+	h1{
+		max-width: 65rem;
+		margin: 0 auto;
+		color:$primaryColor;
+		font-size: 2rem;
+		padding: 1.5rem;
+		}
+	div.about{
+		background-color: #E9E9E9;
+		max-width: 65rem;
+		margin: 0 auto;
+		padding: 1rem;
+		border-top: 1px solid lighten(#000, 40%);
+		border-bottom: 1px solid lighten(#000, 40%);
+		
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		-ms-grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-column-gap: 20px;
+		grid-row-gap: 15px;
+		div.persistence{
+			grid-row: 1;
+			grid-column: 1/span 4;
+			-ms-grid-row: 1;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 4;
+			-ms-grid-row-span:1;
+		}
+		div.process{
+			grid-row: 2;
+			grid-column: 1/span 4;
+			-ms-grid-row: 2;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 4;
+			-ms-grid-row-span: 1;
+		}
+		div.people{
+			grid-row: 3;
+			grid-column: 1/span 4;
+			-ms-grid-row: 3;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 4;
+			-ms-grid-row-span:1;
+		}
+		div.payoff{
+			grid-row: 4;
+			grid-column: 1/span 4;
+			-ms-grid-row: 4;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 4;
+			-ms-grid-row-span:1;
+		}
+		
+	}//end about
+	div.extras{
+		max-width: 65rem;
+		margin: 0 auto;
+		padding: 1rem;
+		background-color: lighten(#E9E9E9, 5%);
+
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		-ms-grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 20px;
+		grid-row-gap: 15px;
+		div.infastructure{
+			grid-row: 1;
+			grid-column: 1/span 3;
+			-ms-grid-row: 1;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 3;
+			-ms-grid-row-span:1;
+		}
+		div.technology{
+			grid-row: 2;
+			grid-column: 1/span 3;
+			-ms-grid-row: 2;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 3;
+			-ms-grid-row-span:1;
+		}
+		div.graph{
+			grid-row: 4;
+			grid-column: 1/span 3;
+			-ms-grid-row: 4;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 3;
+			-ms-grid-row-span:1;
+				
+			button{
+				margin: 0 auto;
+				display: block;
+				background-color: $primaryColor;
+				color: white;
+				border-radius: 8px;
+				text-align: center;
+				text-decoration: none;
+				padding: 10px 45px;
+			}
+			p{
+				margin-top: 8px;
+				text-align:center;
+			}
+			
+			
+		}
+		div.techSupport{
+			h2{
+				margin-top: 10px;
+				margin-bottom: 10px;
+				color:$primaryColor;
+				font-size: 1.5rem;
+			}
+			grid-row: 3;
+			grid-column: 1/span 3;
+			-ms-grid-row: 3;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 3;
+			-ms-grid-row-span:1;
+		}
+
+
+	}//end extras
+
+	div.marketing{
+		max-width: 65rem;
+		margin: 0 auto;
+		padding: 1rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		-ms-grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 20px;
+		grid-row-gap: 15px;
+		div.cvs{
+			grid-row: 1;
+			grid-column: 1/span 1;
+			-ms-grid-row: 1;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			-ms-grid-row-span:1;
+		}
+		div.walmart{
+			grid-row: 1;
+			grid-column: 2/span 1;
+			-ms-grid-row: 1;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 1;
+			-ms-grid-row-span:1;
+		}
+		div.McKesson{
+			grid-row: 1;
+			grid-column: 3/span 1;
+			-ms-grid-row: 1;
+			-ms-grid-column: 3;
+			-ms-grid-column-span: 1;
+			-ms-grid-row-span:1;
+		}
+		div.Exxon{
+			grid-row: 2;
+			grid-column: 1/span 1;
+			-ms-grid-row: 2;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 1;
+			-ms-grid-row-span:1;
+		}
+		div.Berkshire{
+			grid-row: 2;
+			grid-column: 2/span 1;
+			-ms-grid-row: 2;
+			-ms-grid-column: 2;
+			-ms-grid-column-span: 1;
+			-ms-grid-row-span:1;
+		}
+		div.Ford{
+			grid-row: 2;
+			grid-column: 3/span 1;
+			-ms-grid-row: 2;
+			-ms-grid-column: 3;
+			-ms-grid-column-span: 1;
+			-ms-grid-row-span:1;
+		}
+	}//end marketing
+	
+	div{
+		figure{
+			width: 100%;
+			img{
+				width: 100%;
+			}
+			figcaption{
+				margin-top: 10px;
+				margin-bottom: 10px;
+				color:$primaryColor;
+				font-size: 1.5rem;
+			}
+		}
+		p{
+			color: lighten(#000, 40%);
+		}
+
+	}
+
+
+}//end main
+
+footer{
+	wdith: 100%;
+	@include gradient($primaryColor, darken($primaryColor, 20%));
+	margin-bottom: 20px;
+	color:white;
+	padding: 0.8rem;
+	p{
+		max-width: 65rem;
+		margin: 0 auto;
+	}
+}
+

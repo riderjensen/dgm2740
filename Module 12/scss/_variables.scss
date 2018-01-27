@@ -1,0 +1,15 @@
+$primaryColor: 	#1D7892;
+$accentColor: #CFB515;
+
+$bannerColor: #111119;
+
+$defaultFont: 'Roboto', sans-serif;
+$normal: 400;
+
+@mixin gradient($variable1, $variable2){
+background: $variable1; /* Old browsers */
+background: -moz-linear-gradient(top, $variable1 0%, $variable2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, $variable1 0%, $variable2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, $variable1 0%, $variable2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$variable1', endColorstr='$variable2',GradientType=0 ); /* IE6-9 */
+}

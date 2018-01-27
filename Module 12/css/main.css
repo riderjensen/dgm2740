@@ -1,0 +1,583 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+header {
+  max-width: 65rem;
+  margin: 0 auto; }
+  header figure {
+    margin-left: 12px;
+    width: 100%; }
+    header figure img {
+      max-wdith: 30px; }
+  header h1 {
+    position: absolute;
+    top: 30px;
+    margin-left: 80px;
+    color: #1D7892;
+    font-size: 20px; }
+  header h2 {
+    position: absolute;
+    top: 50px;
+    margin-left: 80px;
+    color: silver; }
+
+nav {
+  max-width: 65rem;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+  nav div {
+    max-width: 65rem;
+    overflow: hidden; }
+    nav div a {
+      float: left;
+      display: block;
+      color: #4d4d4d;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 16px; }
+  nav .topnav a:not(.active) {
+    display: none; }
+  nav .topnav a.icon {
+    float: left;
+    display: block; }
+  nav .topnav.responsive {
+    position: relative; }
+  nav .topnav.responsive .icon {
+    position: absolute;
+    left: 0;
+    top: 0; }
+  nav .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right; }
+
+main {
+  max-width: 100%; }
+  main div.banner {
+    max-width: 65rem;
+    margin: 0 auto; }
+    main div.banner figure {
+      width: 100%; }
+      main div.banner figure img {
+        width: 100%; }
+  main div.longColor {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #111119; }
+    main div.longColor div.columns {
+      max-width: 65rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      -ms-grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px; }
+      main div.longColor div.columns div.informationLeft {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-bottom: 30px;
+        grid-row: 1;
+        grid-column: 1/span 4;
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 4;
+        -ms-grid-row-span: 1;
+        color: white; }
+        main div.longColor div.columns div.informationLeft h1, main div.longColor div.columns div.informationLeft h2 {
+          padding: 0.5rem;
+          color: #CFB515;
+          font-size: 1.7rem; }
+        main div.longColor div.columns div.informationLeft P {
+          padding: 0.5rem; }
+        main div.longColor div.columns div.informationLeft ul {
+          margin-left: 60px;
+          padding: .5rem; }
+      main div.longColor div.columns div.informationRight {
+        margin-bottom: 30px;
+        grid-row: 3;
+        grid-column: 1/span 4;
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 4;
+        -ms-grid-row-span: 1;
+        text-align: left;
+        display: inline;
+        float: right; }
+        main div.longColor div.columns div.informationRight h1, main div.longColor div.columns div.informationRight h2 {
+          font-size: 1.7rem;
+          padding: 0.5rem;
+          color: #CFB515; }
+        main div.longColor div.columns div.informationRight p {
+          font-size: 20px;
+          color: white;
+          margin-left: 20px; }
+  main h1 {
+    max-width: 65rem;
+    margin: 0 auto;
+    color: #1D7892;
+    font-size: 2rem;
+    padding: 1.5rem; }
+  main div.about {
+    background-color: #E9E9E9;
+    max-width: 65rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 15px; }
+    main div.about div.persistence {
+      grid-row: 1;
+      grid-column: 1/span 4;
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 4;
+      -ms-grid-row-span: 1; }
+    main div.about div.process {
+      grid-row: 2;
+      grid-column: 1/span 4;
+      -ms-grid-row: 2;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 4;
+      -ms-grid-row-span: 1; }
+    main div.about div.people {
+      grid-row: 3;
+      grid-column: 1/span 4;
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 4;
+      -ms-grid-row-span: 1; }
+    main div.about div.payoff {
+      grid-row: 4;
+      grid-column: 1/span 4;
+      -ms-grid-row: 4;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 4;
+      -ms-grid-row-span: 1; }
+  main div.extras {
+    max-width: 65rem;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #f6f6f6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 15px; }
+    main div.extras div.infastructure {
+      grid-row: 1;
+      grid-column: 1/span 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row-span: 1; }
+    main div.extras div.technology {
+      grid-row: 2;
+      grid-column: 1/span 3;
+      -ms-grid-row: 2;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row-span: 1; }
+    main div.extras div.graph {
+      grid-row: 4;
+      grid-column: 1/span 3;
+      -ms-grid-row: 4;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row-span: 1; }
+      main div.extras div.graph button {
+        margin: 0 auto;
+        display: block;
+        background-color: #1D7892;
+        color: white;
+        border-radius: 8px;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 45px; }
+      main div.extras div.graph p {
+        margin-top: 8px;
+        text-align: center; }
+    main div.extras div.techSupport {
+      grid-row: 3;
+      grid-column: 1/span 3;
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row-span: 1; }
+      main div.extras div.techSupport h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #1D7892;
+        font-size: 1.5rem; }
+  main div.marketing {
+    max-width: 65rem;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 15px; }
+    main div.marketing div.cvs {
+      grid-row: 1;
+      grid-column: 1/span 1;
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      -ms-grid-row-span: 1; }
+    main div.marketing div.walmart {
+      grid-row: 1;
+      grid-column: 2/span 1;
+      -ms-grid-row: 1;
+      -ms-grid-column: 2;
+      -ms-grid-column-span: 1;
+      -ms-grid-row-span: 1; }
+    main div.marketing div.McKesson {
+      grid-row: 1;
+      grid-column: 3/span 1;
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 1;
+      -ms-grid-row-span: 1; }
+    main div.marketing div.Exxon {
+      grid-row: 2;
+      grid-column: 1/span 1;
+      -ms-grid-row: 2;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      -ms-grid-row-span: 1; }
+    main div.marketing div.Berkshire {
+      grid-row: 2;
+      grid-column: 2/span 1;
+      -ms-grid-row: 2;
+      -ms-grid-column: 2;
+      -ms-grid-column-span: 1;
+      -ms-grid-row-span: 1; }
+    main div.marketing div.Ford {
+      grid-row: 2;
+      grid-column: 3/span 1;
+      -ms-grid-row: 2;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 1;
+      -ms-grid-row-span: 1; }
+  main div figure {
+    width: 100%; }
+    main div figure img {
+      width: 100%; }
+    main div figure figcaption {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: #1D7892;
+      font-size: 1.5rem; }
+  main div p {
+    color: #666666; }
+
+footer {
+  wdith: 100%;
+  background: #1D7892;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #1D7892 0%, #0c323d 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #1D7892 0%, #0c323d 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #1D7892 0%, #0c323d 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$variable1', endColorstr='$variable2',GradientType=0 );
+  /* IE6-9 */
+  margin-bottom: 20px;
+  color: white;
+  padding: 0.8rem; }
+  footer p {
+    max-width: 65rem;
+    margin: 0 auto; }
+
+@media only screen and (min-width: 35rem) {
+  nav div {
+    float: right; }
+    nav div a {
+      float: left; }
+  nav .topnav a:not(.active) {
+    display: block; }
+  nav .topnav a:not(:first-child) {
+    display: block; }
+  nav .topnav a.icon {
+    display: none; }
+
+  main {
+    max-width: 100%; }
+    main div.banner {
+      max-width: 65rem;
+      margin: 0 auto; }
+      main div.banner figure {
+        width: 100%; }
+        main div.banner figure img {
+          width: 100%; }
+    main div.longColor div.columns div.informationLeft {
+      grid-row: 1;
+      grid-column: 1/span 3;
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+      -ms-grid-row-span: 2; }
+    main div.longColor div.columns div.informationRight {
+      grid-row: 1;
+      grid-column: 4/span 1;
+      -ms-grid-row: 1;
+      -ms-grid-column: 4;
+      -ms-grid-column-span: 1;
+      -ms-grid-row-span: 2;
+      text-align: right; }
+    main div.about div.persistence {
+      grid-row: 1;
+      grid-column: 1/span 2;
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 2;
+      -ms-grid-row-span: 1; }
+    main div.about div.process {
+      grid-row: 1;
+      grid-column: 3/span 2;
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 2;
+      -ms-grid-row-span: 1; }
+    main div.about div.people {
+      grid-row: 2;
+      grid-column: 1/span 2;
+      -ms-grid-row: 2;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 2;
+      -ms-grid-row-span: 1; }
+    main div.about div.payoff {
+      grid-row: 2;
+      grid-column: 3/span 2;
+      -ms-grid-row: 2;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 2;
+      -ms-grid-row-span: 1; }
+    main div.extras {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      -ms-grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 15px; }
+      main div.extras div.infastructure {
+        grid-row: 1;
+        grid-column: 1/span 1;
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+        -ms-grid-row-span: 1; }
+      main div.extras div.technology {
+        grid-row: 1;
+        grid-column: 2/span 1;
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 1;
+        -ms-grid-row-span: 1; }
+      main div.extras div.graph {
+        grid-row: 1/span 2;
+        grid-column: 3/span 1;
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 1;
+        -ms-grid-row-span: 2; }
+      main div.extras div.techSupport {
+        grid-row: 2/span 1;
+        grid-column: 1/span 2;
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+        -ms-grid-row-span: 1; }
+    main div.marketing {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      -ms-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 15px; }
+      main div.marketing div.cvs {
+        grid-row: 1;
+        grid-column: 1/span 1;
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+        -ms-grid-row-span: 1; }
+      main div.marketing div.walmart {
+        grid-row: 1;
+        grid-column: 2/span 1;
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 1;
+        -ms-grid-row-span: 1; }
+      main div.marketing div.McKesson {
+        grid-row: 1;
+        grid-column: 3/span 1;
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 1;
+        -ms-grid-row-span: 1; }
+      main div.marketing div.Exxon {
+        grid-row: 1;
+        grid-column: 4/span 1;
+        -ms-grid-row: 1;
+        -ms-grid-column: 4;
+        -ms-grid-column-span: 1;
+        -ms-grid-row-span: 1; }
+      main div.marketing div.Berkshire {
+        grid-row: 1;
+        grid-column: 5/span 1;
+        -ms-grid-row: 1;
+        -ms-grid-column: 5;
+        -ms-grid-column-span: 1;
+        -ms-grid-row-span: 1; }
+      main div.marketing div.Ford {
+        grid-row: 1;
+        grid-column: 6/span 1;
+        -ms-grid-row: 1;
+        -ms-grid-column: 6;
+        -ms-grid-column-span: 1;
+        -ms-grid-row-span: 1; } }
+@media only screen and (min-width: 65rem) {
+  nav div a:last-child {
+    border-left: 1px solid rgba(0, 0, 0, 0.3); }
+
+  main div.about div.persistence {
+    grid-row: 1;
+    grid-column: 1/span 1;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1; }
+  main div.about div.process {
+    grid-row: 1;
+    grid-column: 2/span 1;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1; }
+  main div.about div.people {
+    grid-row: 1;
+    grid-column: 3/span 1;
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1; }
+  main div.about div.payoff {
+    grid-row: 1;
+    grid-column: 4/span 1;
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 1; }
+  main div.extras div.techSupport {
+    grid-row: 2/span 1;
+    grid-column: 1/span 2;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    -ms-grid-row-span: 1; } }
