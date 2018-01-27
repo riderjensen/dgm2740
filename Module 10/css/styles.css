@@ -1,0 +1,350 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* BODY  */
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px; }
+
+/* HEADER  */
+header {
+  border-bottom: solid 1px #662D91; }
+  header h1 {
+    display: none; }
+  header figure {
+    margin-left: 12px;
+    width: 100%; }
+    header figure img {
+      width: 100%;
+      max-width: 400px; }
+
+/* MAIN  */
+main {
+  padding: 1rem 0; }
+  main h1 {
+    font-size: 2.5rem;
+    color: #F7941D;
+    padding-left: 2%; }
+  main form#checkout {
+    margin: 1em 3%; }
+    main form#checkout fieldset {
+      background-color: #d6f4ff;
+      border-radius: 1em;
+      margin: 1.5em 0;
+      border: #F7941D solid 1px; }
+      main form#checkout fieldset legend {
+        color: #F7941D;
+        margin-left: 6%;
+        padding: .5em;
+        border: #23c3ff solid 1px;
+        background-color: #a3e6ff;
+        border-radius: .4em; }
+      main form#checkout fieldset label {
+        display: block;
+        margin: .5em; }
+        main form#checkout fieldset label span {
+          display: block;
+          color: #005170;
+          padding-top: 1em;
+          padding-bottom: .3em; }
+    main form#checkout input.submitBtn {
+      -webkit-appearance: none;
+      background-color: #F7941D;
+      border: solid 1px #8f5105;
+      border-radius: 5px;
+      padding: 1em;
+      width: 100%;
+      box-shadow: 4px 4px 10px #000; }
+
+/* HTML5 VALIDATION  */
+label input {
+  background-color: #f4f2ef;
+  padding: .3em .3em .3em 2em;
+  border: solid 1px #000;
+  border-radius: 5px;
+  font-size: .9em;
+  width: 90%;
+  max-width: 500px;
+  background-image: url(../images/pizel.png);
+  background-repeat: no-repeat;
+  background-position: 4px 3px; }
+
+label input.radioBtn {
+  min-width: 30px;
+  max-width: 30px; }
+
+input:focus {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5) inset; }
+
+input:required {
+  background-position: 4px -27px; }
+
+input:focus:invalid {
+  background-position: 4px -57px; }
+
+input:required:valid {
+  background-color: #fff;
+  background-position: 4px -87px; }
+
+/* FOOTER  */
+footer {
+  color: #662D91;
+  padding: 2rem 0;
+  text-align: center; }
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*Change the menubar color on line 23 */
+/*Change the dropdown menu color on line 49*/
+/*If you have a light background color then change the background image on lines 30 and 37 to load menuOpenBlack and menuCloseBlack*/
+/*Adjust the media query max-width value on line 12 to match your breakpoint between the small and medium screens OR between the medium and large screens*/
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#hamburgerBtn {
+  display: none; }
+
+/* hide the navigation button by default */
+@media only screen and (max-width: 64rem) {
+  /* Navigation Button  -------------------------------------------------------- */
+  body {
+    padding-top: 50px; }
+
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2.75rem;
+    background-color: #c6dfe6;
+    /* change the menu color */ }
+
+  #hamburgerBtn {
+    display: block;
+    width: 7rem;
+    height: 2.75rem;
+    background-image: url("../images/menuOpenBlack.png");
+    background-color: rgba(0, 0, 0, 0.1);
+    background-position: 2vw center;
+    background-repeat: no-repeat;
+    border: 0 none; }
+
+  #hamburgerBtn.open {
+    background: url("../images/menuCloseBlack.png");
+    background-position: 2vw center;
+    background-repeat: no-repeat; }
+
+  /* Navigation Bar -------------------------------------------------------- */
+  #primaryNav {
+    height: 0;
+    overflow: hidden;
+    width: 20rem;
+    background-color: #c6dfe6;
+    /* change the menu color */
+    margin: 0;
+    padding: 0;
+    z-index: 998;
+    font-family: Verdana;
+    font-weight: normal; }
+
+  #primaryNav li.active a {
+    background-color: rgba(0, 0, 0, 0.25); }
+
+  #primaryNav li a {
+    display: block;
+    width: 100%;
+    padding: .75rem 2vw;
+    font-size: 14px;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15);
+    color: black;
+    text-decoration: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.2); }
+
+  #primaryNav li a:hover {
+    background-color: rgba(0, 0, 0, 0.5); }
+
+  /* Toggle the navigation bar to expand down  */
+  #primaryNav.open {
+    height: auto; }
+
+  /* Submenus – optional .parent class indicates dropdowns */
+  #primaryNav > li:hover > a {
+    background: rgba(0, 0, 0, 0.5); }
+
+  #primaryNav li.parent > a:after {
+    font-size: .75rem;
+    content: "\25BC";
+    color: rgba(255, 255, 255, 0.5);
+    float: right; }
+
+  #primaryNav li.parent > a:hover {
+    background: rgba(0, 0, 0, 0.75); }
+
+  /*hide the sub menu items by default*/
+  #primaryNav li ul {
+    display: none;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0; }
+
+  #primaryNav li ul a {
+    border-top: solid 1px rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+    padding: 10px 5%;
+    font-weight: normal; }
+
+  #primaryNav li:hover ul {
+    display: block; } }
+/* End Mobile Styles */
+@media only screen and (min-width: 35rem) {
+  /* MAIN  */
+  main h1 {
+    font-size: 5rem; }
+  main form#checkout input.submitBtn {
+    width: 50%; } }
+@media only screen and (min-width: 64.0625rem) {
+  /* NAVigation  */
+  nav {
+    background-color: #c6dfe6; }
+    nav ul {
+      margin-left: 2%;
+      border-left: 1px solid rgba(0, 0, 0, 0.2); }
+    nav ul li {
+      float: left; }
+    nav ul li a {
+      display: block;
+      border: none;
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+      background: none;
+      font-size: .9em;
+      padding: .7em .9em;
+      color: rgba(0, 0, 0, 0.9);
+      text-decoration: none;
+      /*transition*/
+      -webkit-transition: background 0.3s linear;
+      transition: background 0.3s linear; }
+    nav ul li a:hover {
+      background: #b4d5de; }
+    nav ul li ul {
+      /*rules for the sub menu items*/
+      z-index: 99;
+      position: absolute;
+      background-color: #e9f3f6;
+      left: -999em;
+      /* pushes the menu way off to the side */
+      width: 10em; }
+    nav ul li ul li {
+      /* overides the float and line from the parent ul */
+      float: none;
+      border-right: none;
+      border-top: solid 1px rgba(0, 0, 0, 0.2); }
+    nav ul li:hover ul {
+      /* this displays the menus as drop downs  */
+      left: auto;
+      margin-left: 0; }
+
+  main form#checkout input.submitBtn {
+    width: 25%; } }

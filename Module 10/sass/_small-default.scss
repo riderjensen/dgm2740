@@ -1,0 +1,119 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+}
+
+
+/* HEADER  */
+header {
+	h1 {display: none;}
+	figure{
+		margin-left: 12px;
+		width: 100%;
+		img{
+			width: 100%;
+			max-width: 400px;
+		}
+	}
+	border-bottom:solid 1px $primaryColor;
+} // end header
+
+
+
+
+
+
+/* MAIN  */
+main {
+	padding: 1rem 0;
+	h1 {font-size: 2.5rem; color: $secondaryColor; padding-left: 2%;}
+	form#checkout{
+		margin: 1em 3%;
+		fieldset{
+			background-color: lighten($thirdColor, 45%);
+			border-radius: 1em;
+			margin: 1.5em 0;
+			border: $secondaryColor solid 1px;
+			legend{
+				color: $secondaryColor;
+				margin-left: 6%;
+				padding: .5em;
+				border: lighten($thirdColor, 10%) solid 1px;
+				background-color: lighten($thirdColor, 35%);
+				border-radius: .4em;
+			}
+			label{
+				display: block;
+				margin: .5em;
+				span{
+					display: block;
+					color: darken($thirdColor, 25%);
+					padding-top: 1em;
+					padding-bottom: .3em;
+				}
+			}
+		}
+
+		input.submitBtn{
+			-webkit-appearance: none;
+			background-color: $secondaryColor;
+			border: solid 1px darken($secondaryColor, 25%);
+			border-radius: 5px;
+			padding: 1em;
+			width: 100%;
+			box-shadow: 4px 4px 10px #000;
+		}
+	}
+} // end main
+
+/* HTML5 VALIDATION  */
+label input{
+	background-color: #f4f2ef;
+	padding: .3em .3em .3em 2em;
+	border: solid 1px #000;
+	border-radius: 5px;
+	font-size: .9em;
+	width: 90%;
+	max-width: 500px;
+	background-image: url(../images/pizel.png);
+	background-repeat: no-repeat;
+	background-position: 4px 3px;
+}
+label input.radioBtn{
+	min-width: 30px;
+	max-width: 30px;		
+	}
+input:focus{
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.5) inset;
+}
+input:required{
+	background-position: 4px -27px;
+}
+input:focus:invalid{
+	background-position: 4px -57px;
+}
+input:required:valid{
+	background-color: #fff;
+	background-position: 4px -87px;
+}
+
+/* FOOTER  */
+footer {
+	color: $primaryColor;
+	padding: 2rem 0;
+	text-align: center;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

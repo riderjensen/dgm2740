@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Hexagon Shop: Order</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging whena phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+     
+</head>
+<body>
+
+<!-- HEADER STARTS HERE -->
+	<header>
+		<figure><img src="images/logo.png" alt=""></figure>
+   	
+    </header>
+    
+    
+<!-- NAV STARTS HERE -->
+	<nav class="clearfix">
+  		<button id="hamburgerBtn"></button>
+   		<ul id="primaryNav">
+			<li ><a href="index.html">Home</a></li>
+			<li class="parent"><a href="#">Products</a>
+				<ul>
+					<li><a href="#">Shirts</a></li>
+					<li><a href="#">Hats</a></li>
+					<li><a href="#">Umbrellas</a></li>
+					<li><a href="#">Shoes</a></li>
+				</ul>
+			</li>
+			<li class="parent"><a href="#"> Shapes</a>
+			<ul>
+					<li><a href="index.html">Hexagons</a></li>
+					<li><a href="index.html">Also Hexagons</a></li>
+				</ul>
+			</li>
+			<li class="active"><a href="#">Order</a></li>
+			<li><a href="#">Customer Reviews</a></li>
+			<li><a href="#">About</a></li>
+		</ul>	
+	</nav>
+
+
+<!-- MAIN STARTS HERE -->
+	<main>
+	<h1>Order Now </h1>
+    <form action="" method="post" enctype="multipart/form-data" name="checkout" id="checkout">
+    	<fieldset>
+    		<legend><span>Personal Information</span></legend>
+	    	<label><span>Full Name:</span><input type="text" name="fullname" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{3,50}" required></label>
+	    	<label><span>Phone Number:</span><input type="tel" name="phone" value="" placeholder="1231231234" pattern="[0-9]{10,20}" required></label>
+	    	<label><span>Email:</span><input type="email" name="email" value="" placeholder="email@gmail.com"  required></label>
+		</fieldset>
+		<fieldset>
+			<legend><span>Company Information</span></legend>
+			<label><span>Date:</span><input type="date" name="date" value=""></label>
+			<label><span>Comapny Name:</span><input type="text" name="business-name" value=""></label>
+			<label><span>Comapny URL:</span><input type="URL" name="business-url" value=""></label>
+			<label><span>Color:</span>
+				<select>
+				  <option value="Red">Red</option>
+				  <option value="Blue">Blue</option>
+				  <option value="Green">Green</option>
+				  <option value="Yellow">Yellow</option>
+				</select>
+			</label>
+			<label><span>Quantity:</span><input type="number" name="quantity" value=""></label>
+			<label><span>Material</span>
+				<label><input class="radioBtn" type="radio" name="material" value="Plastic"> Plastic</label>
+  				<label><input class="radioBtn" type="radio" name="material" value="Aluminum"> Aluminum<
+			</label>
+		</fieldset>
+		<fieldset>
+			<legend><span>Payment Information</span></legend>
+			<label><span>Name On The Card:</span><input type="text" name="card-name" value="" autocomplete="off" required></label>
+			<label><span>Card Number:</span><input type="number" name="card-number" value="" required></label>
+			<label><span>Expiration Date:</span><input type="date" name="card-exp" value="" required></label>
+		</fieldset>
+
+		<input type="submit" value="Sign Me Up!" name="submit" class="submitBtn">
+		<input type="hidden" value="Purchase From Hexagon" name="subject">
+		<input type="hidden" name="redirect" value="#">
+    </form>
+    
+	</main>
+    
+<!-- FOOTER STARTS HERE -->  
+    <footer>
+    <footer>
+        <p>&copy; Rider Jensen Creations 2018 | <a href="http://www.riderjensen.com" target="_blank">riderejensen.com</a> | Login </p>
+      </footer>
+    </footer>
+    
+<script type="" src="js/menuToggle.js"></script>
+	
+
+</body>
+</html>
