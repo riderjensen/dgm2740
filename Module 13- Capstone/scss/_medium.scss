@@ -1,0 +1,69 @@
+main.categories{
+	grid-template-columns: 1fr;
+	div{
+		p{
+			font-size: 1.12rem;
+		}
+	}
+}
+nav{
+	div a{
+		font-size: 1.3rem;
+	}
+}
+
+main.search{
+	div.grid{
+		grid-template-columns: 1fr 1fr;
+	}
+	
+}
+
+main.account{
+	div{
+	form#accountInfo{
+		margin: 1em 3%;
+		fieldset{
+			background-color: lighten($primary, 45%);
+			border-radius: 1em;
+			margin: 1.5em 0;
+			border: $dark-primary solid 1px;
+			legend{
+				color: $dark-primary;
+				margin-left: 6%;
+				padding: .5em;
+				border: lighten($accent, 10%) solid 1px;
+				background-color: lighten($accent, 35%);
+				border-radius: .4em;
+			}
+			label{
+				display: block;
+				margin: .5em;
+				span{
+					display: block;
+					color: darken($primary, 25%);
+					padding-top: 1em;
+					padding-bottom: .3em;
+				}
+			}
+		}
+		input{
+			width: 75%;
+			height: 30px;
+		}
+
+		input.submitBtn{
+			-webkit-appearance: none;
+			background-color: $dark-primary;
+			border: solid 1px darken($primary, 25%);
+			border-radius: 5px;
+			padding: 1em;
+			width: 50%;
+			display: block;
+			margin: auto;
+			box-shadow: 4px 4px 10px #000;
+			color: white;
+		}
+	}
+}
+}

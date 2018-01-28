@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+<meta charset="utf-8">
+<title>Cinema On Demand: Categories</title>
+   	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<script src="https://use.fontawesome.com/ec190a7a0e.js"></script>
+<!-- STYLE SHEETS -->
+    <link href="css/main.css" rel="stylesheet">
+    
+</head>
+<body>
+<div class="wrapper">
+<!-- PAGE HEADER GOES HERE -->
+    <header>
+        <figure>
+            <img src="images/logo.png" alt="Cinema On Demand Logo">
+        </figure>
+    	<h1>Cinema On Demand</h1>
+     	<h2>Categories</h2>
+    </header>
+    
+
+    
+<!-- PAGE CONTENT GOES HERE -->
+    <main class="account">
+        
+        <div>
+            <form action="" method="post" enctype="multipart/form-data" name="checkout" id="accountInfo">
+                <fieldset>
+            <legend><span>Personal Information</span></legend>
+            <label><span>Address:</span><input type="text" name="address" value="" placeholder="Address" pattern="[a-zA-Z -._]{3,50}" required></label>
+            <label><span>City, State and Zipcode:</span><input type="text" name="address" value="" placeholder="City, State and Zipcode" required></label>
+            <label><span>Username:</span><input type="text" name="username" value="" placeholder="Username" pattern="[a-zA-Z -._]{3,50}" required></label>
+            <label><span>Phone Number:</span><input type="tel" name="phone" value="" placeholder="1231231234" pattern="[0-9]{10,20}" required></label>
+            <label><span>Email:</span><input type="email" name="email" value="" placeholder="email@gmail.com"  required></label>
+            <label><span>Last Four On Credit Card:</span><input type="number" name="CC" value="" placeholder="1234" pattern="[0-9]{4}" required></label>
+        </fieldset>
+        <input type="submit" value="Log Out" name="submit" class="submitBtn">
+            </form>
+
+        </div>
+        
+            
+    	
+    </main>
+
+    <!-- PAGE NAVIGATION GOES HERE -->
+    <nav>
+    	<div><a href="index.html"><i class="fa fa-list" aria-hidden="true"></i>  Categories</a></div>
+    	<div><a href="search.html"><i class="fa fa-search" aria-hidden="true"></i>  Search</a></div>
+    	<div class="active"><a href="#" ><i class="fa fa-user" aria-hidden="true"></i>  Account</a></div>
+    </nav>
+    
+    </div><!---End Wrapper -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body{
+	font-size: 16px;
+	font-family: $defaultFont;
+	font-weight: $normal;
+	background-color: $white;
+}
+
+.wrapper{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+header{
+	background-color: $primary;
+	color: $dark-accent;
+	padding: .5rem $gutter;
+	font-size: 1.5rem;
+	figure{
+		margin-left: 12px;
+		width: 100%;
+		img{
+		
+		max-wdith: 30px;
+		}
+	}
+	h1{
+		position: absolute;
+		top: 30px;
+		margin-left: 105px;
+		color: $accent;
+		font-size: 20px;
+	}
+
+	h2{
+		position: absolute;
+		top: 50px;
+		margin-left: 105px;
+		color: silver;
+		color: $accent;
+		font-size: 18px;
+	}
+
+}
+nav{
+	background-color: $primary;
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	border-top: 1px solid $dark-accent;
+	display: flex;
+	div{
+		flex-basis: 33.33%;
+		text-align: center;
+	}
+	div a{
+		display: block;
+		font-size: 1rem;
+		padding: .5rem 0;
+		color: $accent;
+		text-decoration: none;
+	}
+	div.active a{
+		background-color: $dark-primary;
+	}
+
+}
+
+main.categories{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: auto;
+	margin-bottom: 30px;
+	figure{
+		padding: .7rem 2vw;
+		img{
+			width: 100%;
+		}
+		figcaption{
+			text-align: center;
+			padding: .2rem 0;
+			color: $primary;
+			height: 1.2em;
+			width: 100%;
+		}
+	}
+	div{
+		padding: .5rem;
+		margin: $gutter;
+		color: $white;
+		background-color: $accent;
+		color:$dark-primary;
+		h2{
+			float: left;
+		}
+		p{
+			display: inline;
+			float:right;
+		}
+
+	}
+}
+
+main.search {
+	div.grid{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-auto-rows: auto;
+		margin-bottom: 30px;
+		figure{
+			padding: .7rem 2vw;
+			img{
+				width: 100%;
+			}
+			figcaption{
+				text-align: center;
+				padding: .2rem 0;
+				color: $primary;
+				height: 1.2em;
+				width: 100%;
+			}
+		}
+	}
+	
+	div{
+		padding: .5rem;
+		margin: $gutter;
+		color: $white;
+		background-color: $accent;
+		color:$dark-primary;
+
+	}
+	div.searchArea{
+		h2{
+			padding: 10px;
+			color:$dark-primary;
+		}
+		form #submit{
+			padding: 7px 30px;
+			background-color: $primary;
+		}
+	}
+}
+
+main.account{
+	div{
+	form#accountInfo{
+		margin: 1em 3%;
+		fieldset{
+			background-color: lighten($primary, 45%);
+			border-radius: 1em;
+			margin: 1.5em 0;
+			border: $dark-primary solid 1px;
+			legend{
+				color: $dark-primary;
+				margin-left: 6%;
+				padding: .5em;
+				border: lighten($accent, 10%) solid 1px;
+				background-color: lighten($accent, 35%);
+				border-radius: .4em;
+			}
+			label{
+				display: block;
+				margin: .5em;
+				span{
+					display: block;
+					color: darken($primary, 25%);
+					padding-top: 1em;
+					padding-bottom: .3em;
+				}
+			}
+		}
+
+		input.submitBtn{
+			-webkit-appearance: none;
+			background-color: $dark-primary;
+			border: solid 1px darken($primary, 25%);
+			border-radius: 5px;
+			padding: 1em;
+			width: 100%;
+			box-shadow: 4px 4px 10px #000;
+			color: white;
+		}
+	}
+}
+}
