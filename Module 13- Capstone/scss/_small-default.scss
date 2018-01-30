@@ -20,13 +20,12 @@ body{
 header{
 	background-color: $primary;
 	color: $dark-accent;
-	padding: .5rem $gutter;
+	padding: .5rem;
 	font-size: 1.5rem;
 	figure{
-		margin-left: 12px;
+
 		width: 100%;
 		img{
-		
 		max-wdith: 30px;
 		}
 	}
@@ -56,7 +55,7 @@ nav{
 	border-top: 1px solid $dark-accent;
 	display: flex;
 	div{
-		flex-basis: 33.33%;
+		flex-basis: 33.4%;
 		text-align: center;
 	}
 	div a{
