@@ -135,6 +135,8 @@ nav {
     color: #008E72; }
   nav div.active a {
     background-color: #4D4D4D; }
+  nav a {
+    text-decoration: none; }
 
 main.hotels {
   display: grid;
