@@ -235,7 +235,8 @@ main.account div form#accountInfo {
     padding: 1em;
     width: 100%;
     box-shadow: 4px 4px 10px #000;
-    color: white; }
+    color: white;
+    margin-bottom: 40px; }
 
 @media only screen and (min-width: 29rem) {
   nav div a {
@@ -284,4 +285,6 @@ main.account div form#accountInfo {
       display: block;
       margin: auto;
       box-shadow: 4px 4px 10px #000;
-      color: white; } }
+      color: white;
+      margin-bottom: 56px;
+      text-align: center; } }
