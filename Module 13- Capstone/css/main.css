@@ -122,14 +122,14 @@ header {
     top: 30px;
     margin-left: 105px;
     color: #F9F8EB;
-    font-size: 20px; }
+    font-size: 16px; }
   header h2 {
     position: absolute;
-    top: 50px;
+    top: 80px;
     margin-left: 105px;
     color: silver;
     color: #F9F8EB;
-    font-size: 18px; }
+    font-size: 14px; }
 
 nav {
   background-color: #7A9EB1;
@@ -176,7 +176,13 @@ main.categories {
     main.categories div p {
       display: inline;
       float: right; }
+  main.categories h2 {
+    padding: 10px;
+    color: #415865; }
 
+main.search h2 {
+  padding: 10px;
+  color: #415865; }
 main.search div.grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -198,9 +204,9 @@ main.search div {
   color: #FFFFFF;
   background-color: #F9F8EB;
   color: #415865; }
-main.search div.searchArea h2 {
-  padding: 10px;
-  color: #415865; }
+main.search div.searchArea form input.checkBox {
+  width: 25px;
+  height: 25px; }
 main.search div.searchArea form #submit {
   padding: 7px 30px;
   background-color: #7A9EB1; }
@@ -227,6 +233,9 @@ main.account div form#accountInfo {
         color: #3f5d6c;
         padding-top: 1em;
         padding-bottom: .3em; }
+  main.account div form#accountInfo input {
+    width: 100%;
+    height: 30px; }
   main.account div form#accountInfo input.submitBtn {
     -webkit-appearance: none;
     background-color: #415865;
@@ -237,6 +246,9 @@ main.account div form#accountInfo {
     box-shadow: 4px 4px 10px #000;
     color: white;
     margin-bottom: 40px; }
+main.account h2 {
+  padding: 10px;
+  color: #415865; }
 
 @media only screen and (min-width: 29rem) {
   nav div a {

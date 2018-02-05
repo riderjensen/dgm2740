@@ -34,16 +34,16 @@ header{
 		top: 30px;
 		margin-left: 105px;
 		color: $accent;
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	h2{
 		position: absolute;
-		top: 50px;
+		top: 80px;
 		margin-left: 105px;
 		color: silver;
 		color: $accent;
-		font-size: 18px;
+		font-size: 14px;
 	}
 
 }
@@ -104,9 +104,17 @@ main.categories{
 		}
 
 	}
+	h2{
+		padding: 10px;
+			color:$dark-primary;
+	}
 }
 
 main.search {
+		h2{
+		padding: 10px;
+		color:$dark-primary;
+	}
 	div.grid{
 		display: grid;
 		grid-template-columns: 1fr;
@@ -136,9 +144,11 @@ main.search {
 
 	}
 	div.searchArea{
-		h2{
-			padding: 10px;
-			color:$dark-primary;
+		form{
+			input.checkBox{
+				width: 25px;
+				height:25px;
+			}
 		}
 		form #submit{
 			padding: 7px 30px;
@@ -175,6 +185,10 @@ main.account{
 				}
 			}
 		}
+		input{
+			width: 100%;
+			height: 30px;
+		}
 
 		input.submitBtn{
 			-webkit-appearance: none;
@@ -189,4 +203,8 @@ main.account{
 		}
 	}
 }
+h2{
+		padding: 10px;
+			color:$dark-primary;
+	}
 }

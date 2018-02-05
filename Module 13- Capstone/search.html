@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
 <meta charset="utf-8">
-<title>Cinema On Demand: Categories</title>
+<title>Cinema On Demand: Search</title>
    	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 	<script src="https://use.fontawesome.com/ec190a7a0e.js"></script>
 <!-- STYLE SHEETS -->
@@ -21,20 +21,20 @@
             <img src="images/logo.png" alt="Cinema On Demand Logo">
         </figure>
     	<h1>Cinema On Demand</h1>
-     	<h2>Categories</h2>
     </header>
     
 
     
 <!-- PAGE CONTENT GOES HERE -->
     <main class="search">
+        <h2 class="title">Search</h2>
         <div class="searchArea">
-            <h2 class="title">Search</h2>
+            
             <form>
-              <input type="checkbox" name="vehicle" value="Bike"> G<br>
-              <input type="checkbox" name="vehicle" value="Bike"> PG<br>
-              <input type="checkbox" name="vehicle" value="Car" checked> PG-13<br>
-              <input type="checkbox" name="vehicle" value="Bike"> R<br>
+              <input class="checkBox" type="checkbox" name="vehicle" value="G"> G<br>
+              <input class="checkBox" type="checkbox" name="vehicle" value="PG"> PG<br>
+              <input class="checkBox" type="checkbox" name="vehicle" value="PG-13" checked> PG-13<br>
+              <input class="checkBox" type="checkbox" name="vehicle" value="R"> R<br>
               <input type="submit" value="Submit" id="submit">
             </form>
         </div>
@@ -71,7 +71,7 @@
 
     <!-- PAGE NAVIGATION GOES HERE -->
     <nav>
-    	<div><a href="index.html"><i class="fa fa-list" aria-hidden="true"></i>  Categories</a></div>
+    	<div><a href="index.html"><i class="fa fa-list" aria-hidden="true"></i>  Category</a></div>
     	<div  class="active"><a href="#"><i class="fa fa-search" aria-hidden="true"></i>  Search</a></div>
     	<div><a href="account.html" ><i class="fa fa-user" aria-hidden="true"></i>  Account</a></div>
     </nav>
